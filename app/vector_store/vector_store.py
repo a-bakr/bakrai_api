@@ -1,5 +1,6 @@
+# app/vector_store/vector_store.py
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_community.vectorstores import FAISS
+from langchain_chroma import Chroma
 import os
 
 vector_store = None
@@ -7,16 +8,26 @@ vector_store = None
 def init_vector_store():
     embeddings = GoogleGenerativeAIEmbeddings(
         model="models/embedding-001",
-        google_api_key="AIzaSyDtNR7vQFPaT_YQhfz_EItbwTW4AUBkz6w",
+        google_api_key="AIzaSyDtNR7vQFPaT_YQhfz_EItbwTW4AUBkz6w"
     )
     
     global vector_store
-    vectorstore_dir = "vectorstore"
+    vectorstore_dir = "chroma_db"
+    
     if os.path.exists(vectorstore_dir):
-        vector_store = FAISS.load_local(vectorstore_dir, embeddings, allow_dangerous_deserialization=True)
+        # Load existing database
+        vector_store = Chroma(
+            persist_directory=vectorstore_dir,
+            embedding_function=embeddings
+        )
     else:
-        vector_store = FAISS.from_texts([""], embeddings)
-        vector_store.save_local(vectorstore_dir)
+        # Create new database
+        vector_store = Chroma.from_texts(
+            texts=[""],
+            embedding=embeddings,
+            persist_directory=vectorstore_dir
+        )
+        vector_store.persist()
 
 def get_vector_store():
     if vector_store is None:
