@@ -1,0 +1,102 @@
+abdallah's data
+{
+  "basics": {
+    "name": "Abdallah Bakr",
+    "nationality": "Egyptian",
+    "title": "Data Scientist | ML Engineer",
+
+    "location": {"city": "Cairo", "country": "Egypt"},
+    "phone": "+20 109 286 8600",
+    "email": "abab231196@gmail.com",
+
+    "resumeUrl": "Abdallah Bakr Data Scientist.pdf",
+    "linkedin": "https://linkedin.com/in/abdallah-bakr",
+    "github": "https://github.com/a-bakr",
+    "instagram": "https://www.instagram.com/abdallah.bkr",
+    "youtube": "https://youtube.com/@archbakr",
+    "kaggle": "https://www.kaggle.com/abdullahbakr",
+
+    "summary": "Abdallah Bakr is a multidisciplinary technologist and entrepreneur with expertise in computational design, programming, and automation. With a foundation in architecture and a passion for innovation, Abdallah seamlessly integrates data science, machine learning, and reinforcement learning into architectural workflows, pushing the boundaries of traditional design and project management processes."
+  }
+}
+
+eduction:
+[
+    {
+        "institution": "Stanford & Coursera",
+        "program": "Machine Learning Specialization",
+        "field": "Artificial Intelligence",
+        "timeline": "2024 - Present",
+        "status": "active",
+        "achievements": [
+            "Deep Learning Specialization",
+            "Neural Network Architecture",
+            "Advanced AI Concepts"
+        ]
+    },
+    {
+        "institution": "IBM & Coursera",
+        "program": "Data Science Professional Certificate",
+        "field": "Data Analytics",
+        "timeline": "2024 - Present",
+        "status": "active",
+        "achievements": [
+            "Big Data Analytics",
+            "Predictive Modeling",
+            "Data Visualization"
+        ]
+    },
+    {
+        "institution": "University",
+        "program": "Bachelor of Architectural Engineering",
+        "field": "Structural Design",
+        "timeline": "2015 - 2020",
+        "status": "completed",
+        "achievements": [
+            "Sustainable Design Principles",
+            "3D Modeling Expertise",
+            "Urban Planning Strategies"
+        ]
+    }
+]
+
+Expertise:
+[
+    {
+        "position": "Data Scientist",
+        "company": "Current Role",
+        "location": "Cairo, Egypt",
+        "startDate": "2024",
+        "endDate": "Present",
+        "highlights": [
+            "Working on data science projects and machine learning applications",
+            "Applying ML algorithms to solve complex problems",
+            "Data analysis and visualization"
+        ]
+    },
+    {
+        "position": "Computational Designer",
+        "company": "CONIX.AI",
+        "location": "Cairo, Egypt",
+        "startDate": "2023-01",
+        "endDate": "2024-10",
+        "highlights": [
+            "Developed a .NET Core API to handle the files between all programs",
+            "Built a generative floor plan using Genetic Algorithm and open-source libraries",
+            "Created Grasshopper plugins for automating floor plans and façade design",
+            "Developed a .NET library for geometry tasks across architectural programs",
+            "Automated generation of design files and Revit models"
+        ]
+    }
+]
+
+prjects
+[
+    {
+        "id": "1",
+        "title": "Data Analysis",
+        "description": "Exploration | Visualization",
+        "htmlPath": "/notebooks/Data Visualization.html",
+        "image": "/images/data_v.png"
+    }
+]
