@@ -2,6 +2,7 @@ from fastapi import APIRouter, UploadFile, HTTPException
 from app.services.chat.upload import UploadService
 from app.services.chat.chat import ChatService
 from pydantic import BaseModel
+from IPython.display import HTML, display, Markdown
 
 router = APIRouter(prefix="", tags=["chat"])
 chat_service = ChatService()
